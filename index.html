@@ -85,9 +85,9 @@
 
         <!-- Botón de Acción Principal Único (Estrategia de Enfoque de Hormozi) -->
         <div class="flex flex-col sm:flex-row gap-5 w-full justify-center max-w-md px-4 mb-16">
-            <button onclick="scrollToSection('precios')" class="w-full bg-gradient-to-r from-brand-gold to-amber-600 hover:from-amber-500 hover:to-brand-gold text-zinc-950 font-bold px-10 py-5 rounded-full transition-all duration-300 transform hover:scale-105 shadow-xl shadow-brand-gold/25 text-center uppercase tracking-widest text-sm">
+            <a href="https://pay.hotmart.com/W105972101G" target="_blank" class="hotmart-link block w-full bg-gradient-to-r from-brand-gold to-amber-600 hover:from-amber-500 hover:to-brand-gold text-zinc-950 font-bold px-10 py-5 rounded-full transition-all duration-300 transform hover:scale-105 shadow-xl shadow-brand-gold/25 text-center uppercase tracking-widest text-sm">
                 Quiero unirme al Club ahora
-            </button>
+            </a>
         </div>
 
         <div class="bg-zinc-950/90 border border-zinc-900 rounded-full px-6 py-3 flex items-center gap-3 text-xs text-zinc-400 shadow-2xl backdrop-blur-md">
@@ -502,7 +502,7 @@
                 </ul>
 
                 <!-- Enlace de Pago Seguro Real que se abre en pestaña nueva para evitar el bloqueo del iframe en Sites -->
-                <a href="https://pay.hotmart.com/W105972101G" target="_blank" id="checkout-link" class="block w-full bg-gradient-to-r from-brand-gold to-amber-600 hover:from-amber-500 hover:to-brand-gold text-zinc-950 font-extrabold py-5 rounded-full text-center transition-all duration-300 uppercase tracking-widest text-sm shadow-xl shadow-brand-gold/15 mb-4 transform hover:scale-[1.02]">
+                <a href="https://pay.hotmart.com/W105972101G" target="_blank" id="checkout-link" class="hotmart-link block w-full bg-gradient-to-r from-brand-gold to-amber-600 hover:from-amber-500 hover:to-brand-gold text-zinc-950 font-extrabold py-5 rounded-full text-center transition-all duration-300 uppercase tracking-widest text-sm shadow-xl shadow-brand-gold/15 mb-4 transform hover:scale-[1.02]">
                     Quiero unirme con 50% de Descuento
                 </a>
 
@@ -564,13 +564,13 @@
 
     <!-- BOTÓN DE COMPRA FLOTANTE INTELIGENTE (STICKY CTA) -->
     <div id="floating-cta" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 w-[92%] max-w-lg bg-gradient-to-r from-brand-gold to-amber-600 p-0.5 rounded-full shadow-2xl shadow-brand-gold/20 transition-all duration-500 ease-in-out transform translate-y-28 opacity-0 pointer-events-none">
-        <button onclick="scrollToSection('precios')" class="w-full bg-zinc-950 hover:bg-zinc-900 text-brand-gold font-bold py-3.5 px-6 rounded-full flex items-center justify-between transition-colors duration-300">
+        <a href="https://pay.hotmart.com/W105972101G" target="_blank" class="hotmart-link w-full bg-zinc-950 hover:bg-zinc-900 text-brand-gold font-bold py-3.5 px-6 rounded-full flex items-center justify-between transition-colors duration-300">
             <span class="text-xs md:text-sm tracking-wider uppercase pl-2 font-medium">Unirme con 50% OFF</span>
             <div class="flex items-center gap-2">
                 <span id="floating-price" class="text-white font-mono text-sm md:text-base font-extrabold">$15.000 ARS</span>
                 <span class="bg-brand-gold text-zinc-950 h-8 w-8 rounded-full flex items-center justify-center text-sm">👠</span>
             </div>
-        </button>
+        </a>
     </div>
 
 
@@ -709,14 +709,18 @@
             const oldPriceEl = document.getElementById('old-price');
             const currentPriceEl = document.getElementById('current-price');
             const floatingPriceEl = document.getElementById('floating-price');
-            const linkEl = document.getElementById('checkout-link');
             const btnArs = document.getElementById('btn-ars');
             const btnUsd = document.getElementById('btn-usd');
 
             oldPriceEl.textContent = pricingData[curr].old;
             currentPriceEl.textContent = pricingData[curr].current;
             floatingPriceEl.textContent = pricingData[curr].floating;
-            linkEl.href = pricingData[curr].link;
+            
+            // Actualiza TODOS los botones de Hotmart en la página al mismo tiempo
+            const hotmartLinks = document.querySelectorAll('.hotmart-link');
+            hotmartLinks.forEach(link => {
+                link.href = pricingData[curr].link;
+            });
 
             if (curr === 'ARS') {
                 btnArs.className = "px-6 py-2 rounded-full font-semibold text-xs md:text-sm transition-all duration-300 bg-brand-gold text-zinc-950";
