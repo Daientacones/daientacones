@@ -53,15 +53,14 @@
 </head>
 <body class="bg-brand-darkBg text-zinc-100 font-sans overflow-x-hidden antialiased">
 
-    <!-- BARRA DE URGENCIA SUPERIOR -->
-    <div class="bg-gradient-to-r from-zinc-950 via-red-950 to-zinc-950 text-brand-gold text-xs md:text-sm font-semibold py-3 px-4 text-center sticky top-0 z-50 border-b border-brand-gold/20 shadow-md">
+    <!-- BARRA DE URGENCIA ÉTICA (3 Días Gratis) -->
+    <div class="bg-gradient-to-r from-zinc-950 via-zinc-900 to-zinc-950 text-brand-gold text-xs md:text-sm font-semibold py-3 px-4 text-center sticky top-0 z-50 border-b border-brand-gold/20 shadow-md">
         <span class="inline-flex items-center gap-2">
             <span class="flex h-2 w-2 relative">
                 <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-gold opacity-75"></span>
                 <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-gold"></span>
             </span>
-            OFERTA EXCLUSIVA DE LANZAMIENTO — 50% OFF EN TU PRIMER MES. FINALIZA EN: 
-            <span id="countdown-timer" class="font-mono bg-black/50 text-white px-2 py-0.5 rounded tracking-wider border border-brand-gold/30">14:59</span>
+            3 DÍAS DE PRUEBA GRATUITA — ENTRÁ Y DESCUBRÍ TU NUEVA VERSIÓN HOY.
         </span>
     </div>
 
@@ -75,18 +74,23 @@
             Membresía Online Exclusiva
         </span>
 
-        <h1 class="font-serif text-4xl md:text-6xl lg:text-7xl font-light leading-tight max-w-5xl tracking-tight mb-8">
+        <h1 class="font-serif text-4xl md:text-6xl lg:text-7xl font-light leading-tight max-w-5xl tracking-tight mb-6">
             Pasá de la <span class="italic font-normal text-brand-gold">rigidez</span> a la fluidez y sensualidad bailando en tacones en <span class="text-white font-normal">90 días</span>
         </h1>
+        
+        <!-- Subtítulo destructor de objeciones -->
+        <h2 class="text-lg md:text-2xl text-brand-gold font-medium mb-6">
+            <span class="text-zinc-400 font-light">Sin coreografías imposibles. Sin que nadie te mire.</span> 100% desde tu casa.
+        </h2>
 
         <p class="text-zinc-400 text-base md:text-xl max-w-3xl font-light mb-12 leading-relaxed px-2">
             El espacio privado diseñado para mujeres principiantes o personas que se quieren adentrar en la disciplina sin presiones, sin miradas ajenas y a su propio ritmo.
         </p>
 
-        <!-- Botón de Acción Principal Único (Estrategia de Enfoque de Hormozi) -->
+        <!-- Botón de Acción Principal Único a Hotmart -->
         <div class="flex flex-col sm:flex-row gap-5 w-full justify-center max-w-md px-4 mb-16">
-            <a href="https://pay.hotmart.com/W105972101G" target="_blank" class="hotmart-link block w-full bg-gradient-to-r from-brand-gold to-amber-600 hover:from-amber-500 hover:to-brand-gold text-zinc-950 font-bold px-10 py-5 rounded-full transition-all duration-300 transform hover:scale-105 shadow-xl shadow-brand-gold/25 text-center uppercase tracking-widest text-sm">
-                Quiero unirme al Club ahora
+            <a href="https://pay.hotmart.com/W105972101G" target="_blank" class="w-full bg-gradient-to-r from-brand-gold to-amber-600 hover:from-amber-500 hover:to-brand-gold text-zinc-950 font-bold px-10 py-5 rounded-full transition-all duration-300 transform hover:scale-105 shadow-xl shadow-brand-gold/25 text-center uppercase tracking-widest text-sm hotmart-link">
+                Quiero unirme a la comunidad
             </a>
         </div>
 
@@ -143,24 +147,22 @@
         </div>
     </section>
 
-    <!-- SECCIÓN MI HISTORIA (LA HISTORIA REAL DE DAI CON TU FOTO DE GOOGLE DRIVE INTEGRADA) -->
+    <!-- SECCIÓN MI HISTORIA (LA HISTORIA REAL DE DAI) -->
     <section id="mi-historia" class="py-28 px-4 max-w-5xl mx-auto border-b border-zinc-900 scroll-mt-20">
         <div class="grid md:grid-cols-12 gap-12 items-center">
             
-            <!-- Foto Real de Dai Estilo Revista con Enlace de Google Drive Procesado -->
+            <!-- Foto Real de Dai -->
             <div class="md:col-span-5 relative group">
                 <div class="absolute inset-0 bg-gradient-to-t from-brand-darkBg via-transparent to-transparent z-10 pointer-events-none"></div>
                 <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-brand-gold to-zinc-800 opacity-25 blur transition duration-1000 group-hover:opacity-40"></div>
                 <div class="relative bg-zinc-900 aspect-[3/4] rounded-3xl overflow-hidden border border-zinc-800 flex flex-col justify-end">
                     
-                    <!-- FOTO DE DAI: Cargada directamente desde tu Drive con enlace de renderizado directo -->
                     <img id="dai-photo" 
                          src="https://lh3.googleusercontent.com/d/1dswrsJJaKSIJ_J8z8rSkE3tbbI8-xeLE" 
                          onerror="this.style.display='none'; document.getElementById('photo-fallback').classList.remove('hidden');"
                          alt="Dai - Coach de Baile en Tacones" 
                          class="w-full h-full object-cover object-center absolute inset-0 z-0">
                     
-                    <!-- Icono/Diseño de respaldo si falla la carga en algún navegador estricto -->
                     <div id="photo-fallback" class="absolute inset-0 hidden flex flex-col justify-center items-center bg-zinc-950 p-8 text-center z-0">
                         <span class="text-[8rem] font-serif text-brand-gold opacity-20">👠</span>
                         <p class="text-xs text-zinc-500 font-light mt-4">Cargando foto del Club...</p>
@@ -357,7 +359,7 @@
                                         <p class="text-brand-gold font-bold mb-1">Hotmart Club:</p>
                                         Tu acceso al Club está listo. Hacé clic acá para ingresar y empezar a bailar de forma privada.
                                     </div>
-                                    <p class="text-[10px] text-zinc-500 font-light font-light">Acceso inmediato en menos de 2 minutos.</p>
+                                    <p class="text-[10px] text-zinc-500 font-light">Acceso inmediato en menos de 2 minutos.</p>
                                 </div>
                             </div>
 
@@ -373,9 +375,9 @@
             </div>
 
             <div class="text-center mt-12">
-                <button onclick="scrollToSection('precios')" class="inline-block bg-gradient-to-r from-brand-gold to-amber-600 hover:from-amber-500 hover:to-brand-gold text-zinc-950 font-bold px-10 py-5 rounded-full transition-all duration-300 transform hover:scale-105 shadow-xl shadow-brand-gold/20 uppercase tracking-widest text-xs">
-                    ¡Listo, quiero empezar hoy mismo!
-                </button>
+                <a href="https://pay.hotmart.com/W105972101G" target="_blank" class="inline-block bg-gradient-to-r from-brand-gold to-amber-600 hover:from-amber-500 hover:to-brand-gold text-zinc-950 font-bold px-10 py-5 rounded-full transition-all duration-300 transform hover:scale-105 shadow-xl shadow-brand-gold/20 uppercase tracking-widest text-xs hotmart-link">
+                    Quiero unirme a la comunidad
+                </a>
             </div>
         </div>
     </section>
@@ -414,7 +416,7 @@
                 <div>
                     <div class="flex text-brand-gold gap-1 mb-6 text-sm">★ ★ ★ ★ ★</div>
                     <p class="text-zinc-300 text-sm italic font-light leading-relaxed mb-6">
-                        "Venía de una separación que me destruyó la autoestima. Me sentía apagada y con cero conexión femenina. El club de Dai fue mi rincón a salvo. Entrenar en mi casa, sin que nadie me viera por Zoom ni me juzgara, me dio la libertad de reencontrarme con mi cuerpo. Hoy piso firme y con un power que creía perdido."
+                        "Venía de una separación que me destruyó la autoestima. Me sentía apagada y con cero conexión femenina. El club de Dai fue mi rincón a salvo. Entrenar en mi casa, sin que nadie me viera por Zoom ni me juzgara, me dio la libertad de reencontrarme con mi cuerpo. Hoy piso firme y con un poder que creía perdido."
                     </p>
                 </div>
                 <div class="border-t border-zinc-900 pt-5">
@@ -453,15 +455,16 @@
         </div>
     </section>
 
-    <!-- SECCIÓN PRECIOS CON CALCULADORA INTERACTIVA -->
+    <!-- SECCIÓN PRECIOS CON CALCULADORA INTERACTIVA, APILAMIENTO DE VALOR Y GARANTÍA -->
     <section id="precios" class="py-24 px-4 bg-zinc-950/30 scroll-mt-20">
         <div class="max-w-3xl mx-auto text-center">
             <span class="text-brand-gold font-semibold tracking-wider text-xs uppercase">Inversión en vos misma</span>
             <h2 class="font-serif text-3xl md:text-5xl font-light mt-2 mb-6">Unite al Club Mensual</h2>
             <p class="text-zinc-400 text-sm md:text-base max-w-xl mx-auto mb-12 font-light">
-                Elegí tu moneda para ver el precio localizado con el <span class="text-brand-gold font-bold">50% de descuento</span> aplicado de forma automática por hoy.
+                Elegí tu moneda para ver tu inversión local de forma transparente.
             </p>
 
+            <!-- Selector de Monedas -->
             <div class="inline-flex p-1.5 bg-zinc-900 border border-zinc-800 rounded-full mb-12">
                 <button id="btn-ars" onclick="changeCurrency('ARS')" class="px-6 py-2 rounded-full font-semibold text-xs md:text-sm transition-all duration-300 bg-brand-gold text-zinc-950">
                     🇦🇷 Argentina (Pesos)
@@ -471,6 +474,7 @@
                 </button>
             </div>
 
+            <!-- Tarjeta de Precios Transparente -->
             <div class="bg-gradient-to-b from-brand-darkCard to-zinc-950 p-8 md:p-12 rounded-3xl border border-brand-gold/40 relative shadow-2xl shadow-brand-gold/5 overflow-hidden">
                 <div class="absolute top-0 right-0 bg-brand-gold text-zinc-950 text-[10px] md:text-xs font-extrabold px-6 py-2 rounded-bl-3xl uppercase tracking-widest">
                     Pase de Acceso Completo
@@ -479,36 +483,70 @@
                 <h3 class="font-serif text-2xl md:text-3xl font-bold text-white mb-2">Suscripción Mensual</h3>
                 <p class="text-zinc-500 text-xs md:text-sm mb-8">Cancela cuando quieras con un solo clic. Sin contratos.</p>
 
-                <div class="mb-8">
-                    <!-- Sincronizado por defecto al cargar en HTML con los valores reales de 15.000 ARS -->
-                    <span id="old-price" class="text-zinc-500 line-through text-lg md:text-2xl mr-3 font-light">$30.000 ARS</span>
+                <div class="mb-6">
                     <span id="current-price" class="text-brand-gold text-4xl md:text-6xl font-extrabold tracking-tight">$15.000 ARS</span>
                     <span class="text-zinc-400 text-sm ml-1">/mes</span>
+                    <p id="tax-note" class="text-zinc-500 text-[10px] mt-2 font-light">* + Impuestos locales aplicables según tu país.</p>
                 </div>
 
-                <ul class="text-left max-w-md mx-auto space-y-4 mb-10 border-t border-zinc-900 pt-8">
-                    <li class="flex items-center gap-3 text-sm text-zinc-300">
-                        <span class="text-brand-gold">✔</span> Acceso a todas las Clases en Vivo semanales
+                <!-- VALUE STACKING (Apilamiento de Valor de Hormozi) -->
+                <ul class="text-left max-w-md mx-auto space-y-4 mb-8 border-t border-zinc-900 pt-8">
+                    <li class="flex items-start gap-3 text-sm text-zinc-300">
+                        <span class="text-brand-gold mt-0.5">✔</span> 
+                        <div>
+                            <span class="font-bold text-white">Clases en Vivo semanales</span>
+                            <span id="stack-vivos" class="block text-xs text-brand-gold/70 mt-0.5">(Valor: $30.000/mes)</span>
+                        </div>
                     </li>
-                    <li class="flex items-center gap-3 text-sm text-zinc-300">
-                        <span class="text-brand-gold">✔</span> Videoteca de Grabaciones 24/7 libre de anuncios
+                    <li class="flex items-start gap-3 text-sm text-zinc-300">
+                        <span class="text-brand-gold mt-0.5">✔</span> 
+                        <div>
+                            <span class="font-bold text-white">Videoteca Grabada 24/7</span>
+                            <span id="stack-video" class="block text-xs text-brand-gold/70 mt-0.5">(Valor: $20.000/mes)</span>
+                        </div>
                     </li>
-                    <li class="flex items-center gap-3 text-sm text-zinc-300">
-                        <span class="text-brand-gold">✔</span> Correcciones de Dai en el búnker privado
+                    <li class="flex items-start gap-3 text-sm text-zinc-300">
+                        <span class="text-brand-gold mt-0.5">✔</span> 
+                        <div>
+                            <span class="font-bold text-white">Correcciones 1 a 1 en el Búnker</span>
+                            <span class="block text-xs text-brand-gold/70 mt-0.5">(Valor: Invaluable)</span>
+                        </div>
                     </li>
-                    <li class="flex items-center gap-3 text-sm text-zinc-300">
-                        <span class="text-brand-gold">✔</span> Kit inicial de postura, equilibrio y pisada segura
+                    <li class="flex items-start gap-3 text-sm text-zinc-300">
+                        <span class="text-brand-gold mt-0.5">✔</span> 
+                        <div>
+                            <span class="font-bold text-white">Kit de Inicio: Postura y Reset Fascial</span>
+                            <span id="stack-bono" class="block text-xs text-brand-gold/70 mt-0.5">(Valor: $30.000)</span>
+                        </div>
                     </li>
                 </ul>
 
-                <!-- Enlace de Pago Seguro Real que se abre en pestaña nueva para evitar el bloqueo del iframe en Sites -->
-                <a href="https://pay.hotmart.com/W105972101G" target="_blank" id="checkout-link" class="hotmart-link block w-full bg-gradient-to-r from-brand-gold to-amber-600 hover:from-amber-500 hover:to-brand-gold text-zinc-950 font-extrabold py-5 rounded-full text-center transition-all duration-300 uppercase tracking-widest text-sm shadow-xl shadow-brand-gold/15 mb-4 transform hover:scale-[1.02]">
-                    Quiero unirme con 50% de Descuento
+                <!-- Resumen Inversión Total -->
+                <div class="text-center mb-6">
+                    <p class="text-zinc-500 text-xs uppercase tracking-wider mb-1">Valor Total Real: <span class="line-through" id="stack-total">$80.000 ARS</span></p>
+                    <p class="text-emerald-400 font-bold text-sm" id="stack-investment">Tu Inversión Hoy: Solo $15.000 ARS <span class="text-zinc-400 text-[10px] font-normal">* + imp.</span></p>
+                </div>
+
+                <!-- Botón de Pago Único -->
+                <a href="https://pay.hotmart.com/W105972101G" target="_blank" class="block w-full bg-gradient-to-r from-brand-gold to-amber-600 hover:from-amber-500 hover:to-brand-gold text-zinc-950 font-extrabold py-5 rounded-full text-center transition-all duration-300 uppercase tracking-widest text-sm shadow-xl shadow-brand-gold/15 mb-4 transform hover:scale-[1.02] hotmart-link">
+                    Quiero unirme
                 </a>
 
-                <p class="text-zinc-500 text-[10px] md:text-xs">
-                    🔒 Pago 100% procesado y protegido por la seguridad de Hotmart de manera internacional.
+                <p class="text-zinc-500 text-[10px] md:text-xs mb-8">
+                    🔒 Pago 100% procesado y protegido por Hotmart.
                 </p>
+
+                <!-- GARANTÍA HACK (Inversión de Riesgo) -->
+                <div class="mt-6 bg-zinc-900/80 border border-zinc-800 rounded-xl p-4 flex items-start gap-3 text-left">
+                    <div class="text-brand-gold text-2xl mt-1">🛡️</div>
+                    <div>
+                        <h4 class="text-white font-bold text-sm mb-1">Garantía de Fluidez de 3 Días</h4>
+                        <p class="text-zinc-400 text-[11px] leading-relaxed">
+                            Podés probar la plataforma <strong>3 días GRATIS</strong>. Entrá al Club, hacé tu primer Reset Fascial y mirá las clases. Si no sentís que es el lugar más seguro y empoderador para tu cuerpo, cancelás con un clic y <strong class="text-white">no se te cobra absolutamente nada</strong>. El riesgo es todo mío.
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -528,7 +566,7 @@
                 </div>
             </div>
 
-            <div class="bg-brand-darkCard rounded-2xl border border-zinc-900 p-6">
+            <div class="bg-brand-darkCard rounded-2xl border border-zinc-800 p-6">
                 <button onclick="toggleFAQ(2)" class="w-full flex justify-between items-center text-left font-semibold text-sm md:text-base text-zinc-200">
                     <span>¿Y si no puedo conectarme al horario del vivo?</span>
                     <span id="faq-icon-2" class="text-brand-gold transition-transform duration-300">+</span>
@@ -538,13 +576,13 @@
                 </div>
             </div>
 
-            <div class="bg-brand-darkCard rounded-2xl border border-zinc-900 p-6">
+            <div class="bg-brand-darkCard rounded-2xl border border-zinc-800 p-6">
                 <button onclick="toggleFAQ(3)" class="w-full flex justify-between items-center text-left font-semibold text-sm md:text-base text-zinc-200">
-                    <span>¿Cómo funciona el cobro de la membresía?</span>
+                    <span>¿Cómo funciona el cobro de la membresía y la prueba gratis?</span>
                     <span id="faq-icon-3" class="text-brand-gold transition-transform duration-300">+</span>
                 </button>
                 <div id="faq-ans-3" class="hidden mt-4 text-sm text-zinc-400 font-light leading-relaxed">
-                    Hotmart realiza el débito automático de forma mensual de tu tarjeta el mismo día que te registraste. Es idéntico a una suscripción de Netflix o Spotify. Podés cancelar tu membresía vos misma en cualquier momento con un solo clic.
+                    Hotmart tomará tus datos, pero <strong>no te cobrará nada durante los primeros 3 días</strong>. Si decidís quedarte, el sistema realizará el débito automático de forma mensual en tu tarjeta recién a partir del cuarto día. Es idéntico a una suscripción de Netflix o Spotify. Podés cancelar tu membresía vos misma en cualquier momento con un solo clic.
                 </div>
             </div>
         </div>
@@ -554,18 +592,14 @@
     <footer class="bg-zinc-950 py-12 px-4 border-t border-zinc-900 text-center text-xs text-zinc-600 pb-28 md:pb-12">
         <p class="mb-4">© 2026 Daientacones. Todos los derechos reservados.</p>
         <p class="max-w-md mx-auto leading-relaxed">
-            Este sitio web no está afiliado a Meta, Instagram, TikTok ni Google. Hotmart es el procesador y distribuidor oficial de los servicios aquí ofrecidos.
+            Este sitio web no está afiliado a Meta, Instagram, TikTok ni Google. Hotmart es el procesador y distribuidor oficial de los servicios aquí ofrecidos. Los impuestos locales correspondientes serán sumados al finalizar la compra dependiendo de tu país de residencia.
         </p>
     </footer>
 
-    <!-- NOTIFICACIONES TOAST DINÁMICAS (SOCIAL PROOF HONESTA) -->
-    <!-- Eliminados de raíz todos los popups simulados de "se acaba de registrar" para proteger tus valores -->
-    <div id="purchase-toast" class="hidden"></div>
-
     <!-- BOTÓN DE COMPRA FLOTANTE INTELIGENTE (STICKY CTA) -->
     <div id="floating-cta" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 w-[92%] max-w-lg bg-gradient-to-r from-brand-gold to-amber-600 p-0.5 rounded-full shadow-2xl shadow-brand-gold/20 transition-all duration-500 ease-in-out transform translate-y-28 opacity-0 pointer-events-none">
-        <a href="https://pay.hotmart.com/W105972101G" target="_blank" class="hotmart-link w-full bg-zinc-950 hover:bg-zinc-900 text-brand-gold font-bold py-3.5 px-6 rounded-full flex items-center justify-between transition-colors duration-300">
-            <span class="text-xs md:text-sm tracking-wider uppercase pl-2 font-medium">Unirme con 50% OFF</span>
+        <a href="https://pay.hotmart.com/W105972101G" target="_blank" class="w-full bg-zinc-950 hover:bg-zinc-900 text-brand-gold font-bold py-3.5 px-6 rounded-full flex items-center justify-between transition-colors duration-300 hotmart-link">
+            <span class="text-xs md:text-sm tracking-wider uppercase pl-2 font-medium">Quiero unirme a la comunidad</span>
             <div class="flex items-center gap-2">
                 <span id="floating-price" class="text-white font-mono text-sm md:text-base font-extrabold">$15.000 ARS</span>
                 <span class="bg-brand-gold text-zinc-950 h-8 w-8 rounded-full flex items-center justify-center text-sm">👠</span>
@@ -573,25 +607,8 @@
         </a>
     </div>
 
-
     <!-- CONTROLADOR JAVASCRIPT DINÁMICO -->
     <script>
-        // Función de navegación scroll con fallback robusto para evitar que se congele en iframes
-        function scrollToSection(id) {
-            const target = document.getElementById(id);
-            if (target) {
-                try {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                } catch (err) {
-                    const offsetTop = target.getBoundingClientRect().top + window.pageYOffset;
-                    window.scrollTo({
-                        top: offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                }
-            }
-        }
-
         // Controlador de scroll para la aparición del Sticky CTA
         window.addEventListener('scroll', function() {
             const floatingCta = document.getElementById('floating-cta');
@@ -689,38 +706,51 @@
             }
         }
 
-        // LÓGICA DE PRECIOS EXACTOS (CON EL LINK REAL DE TU CHECKOUT DE HOTMART)
+        // LÓGICA DE PRECIOS EXACTOS Y APILAMIENTO DE VALOR AUTOMÁTICO
         const pricingData = {
             ARS: {
-                old: "$30.000 ARS",
                 current: "$15.000 ARS",
                 floating: "$15.000 ARS",
-                link: "https://pay.hotmart.com/W105972101G" 
+                valVivos: "(Valor: $30.000/mes)",
+                valVideo: "(Valor: $20.000/mes)",
+                valBono: "(Valor: $30.000)",
+                valTotal: "$80.000 ARS",
+                valInvestment: "Tu Inversión Hoy: Solo $15.000 ARS <span class='text-zinc-400 text-[10px] font-normal'>* + imp.</span>",
+                link: "https://pay.hotmart.com/W105972101G" // Link unificado
             },
             USD: {
-                old: "$30 USD",
                 current: "$15 USD",
                 floating: "$15 USD",
-                link: "https://pay.hotmart.com/W105972101G" 
+                valVivos: "(Valor: $30/mes)",
+                valVideo: "(Valor: $20/mes)",
+                valBono: "(Valor: $30)",
+                valTotal: "$80 USD",
+                valInvestment: "Tu Inversión Hoy: Solo $15 USD <span class='text-zinc-400 text-[10px] font-normal'>* + imp.</span>",
+                link: "https://pay.hotmart.com/W105972101G" // Link unificado
             }
         };
 
         function changeCurrency(curr) {
-            const oldPriceEl = document.getElementById('old-price');
-            const currentPriceEl = document.getElementById('current-price');
-            const floatingPriceEl = document.getElementById('floating-price');
-            const btnArs = document.getElementById('btn-ars');
-            const btnUsd = document.getElementById('btn-usd');
-
-            oldPriceEl.textContent = pricingData[curr].old;
-            currentPriceEl.textContent = pricingData[curr].current;
-            floatingPriceEl.textContent = pricingData[curr].floating;
+            // Actualizar Precios UI
+            document.getElementById('current-price').textContent = pricingData[curr].current;
+            document.getElementById('floating-price').textContent = pricingData[curr].floating;
             
-            // Actualiza TODOS los botones de Hotmart en la página al mismo tiempo
+            // Actualizar Apilamiento de Valor (Value Stack)
+            document.getElementById('stack-vivos').textContent = pricingData[curr].valVivos;
+            document.getElementById('stack-video').textContent = pricingData[curr].valVideo;
+            document.getElementById('stack-bono').textContent = pricingData[curr].valBono;
+            document.getElementById('stack-total').textContent = pricingData[curr].valTotal;
+            document.getElementById('stack-investment').innerHTML = pricingData[curr].valInvestment;
+
+            // Actualizar Botones de Hotmart
             const hotmartLinks = document.querySelectorAll('.hotmart-link');
             hotmartLinks.forEach(link => {
                 link.href = pricingData[curr].link;
             });
+
+            // Estilos de botones de moneda
+            const btnArs = document.getElementById('btn-ars');
+            const btnUsd = document.getElementById('btn-usd');
 
             if (curr === 'ARS') {
                 btnArs.className = "px-6 py-2 rounded-full font-semibold text-xs md:text-sm transition-all duration-300 bg-brand-gold text-zinc-950";
@@ -731,30 +761,11 @@
             }
         }
 
-        // CRONÓMETRO DE URGENCIA (15 Minutos)
-        function startTimer(duration, display) {
-            let timer = duration, minutes, seconds;
-            setInterval(function () {
-                minutes = parseInt(timer / 60, 10);
-                seconds = parseInt(timer % 60, 10);
-
-                minutes = minutes < 10 ? "0" + minutes : minutes;
-                seconds = seconds < 10 ? "0" + seconds : seconds;
-
-                display.textContent = minutes + ":" + seconds;
-
-                if (--timer < 0) {
-                    timer = duration;
-                }
-            }, 1000);
-        }
-
         // LÓGICA DE DETECCIÓN Y CONVERSIÓN DE GOOGLE DRIVE AUTOMÁTICA
         function fixGoogleDriveImage() {
             const img = document.getElementById('dai-photo');
             if (img) {
                 let src = img.src;
-                // Si detecta que es un link común de compartir de Drive, lo convierte al link de renderizado directo
                 if (src.includes('drive.google.com')) {
                     let fileId = '';
                     if (src.includes('/d/')) {
@@ -771,11 +782,7 @@
 
         // Inicialización de la pantalla al cargar
         window.onload = function () {
-            const fifteenMinutes = 60 * 15;
-            const display = document.querySelector('#countdown-timer');
-            startTimer(fifteenMinutes, display);
             setInterval(updateLiveUsers, 4000);
-            // Corrige la foto de Drive automáticamente al cargar la web
             fixGoogleDriveImage();
         };
 
